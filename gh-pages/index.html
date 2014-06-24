@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <title>jsonSyntax module</title>
+
+  <style>
+    #fullpage { width:800px; margin-right:auto; margin-left:auto; font-family:'Arial','Sans-Serif'; }
+
+    header { clear:both; height:44px; color:white; background-color:#476BB2; }
+    header h1 { float:left; margin:0; padding:0; padding-left:8px; font-family:'Arial',sans-serif; font-size:30px; font-weight:300; }
+
+    article { clear:both; float:left; width:65%; margin-top:8px; padding-top:4px; display:inline-block; }
+
+    aside { float:right; width:30%; margin-top:16px; padding:4px; border:1px dotted lightgray; display:inline-block; }
+    aside h4 { margin-top:0; }
+  </style>
+</head>
+<body>
+  <div id='fullpage'>
+    <header>
+      <h1>jsonSyntax for Javascript / Node.js</h1>
+    </header>
+    <article>
+      <p>The 'hello world' of JSON processing, jsonSyntax provides a library
+      to determine whether a file contains valid JSON syntax or not.</p>
+      <p>Support for command line processing is provided, allowing use from
+      console commands or scripts.</p> 
+
+      <h4>Command Line / Script Use</h4>
+      To run the syntax checker (command line or script), use the <i>jsonsyntax</i>
+      command with a file name (path optional). For example, to check the file
+      <i>example.json</i>, use,
+      <pre>
+    jsonsyntax example.json
+      </pre>
+
+      <h4>Library Function Use</h4>
+      To use the syntax checker as a library function, call the <i>syntaxCheck</i>
+      function in a try/catch block. For example,
+      <pre>
+    var checkSyntax = require ("jsonSyntax").checkSyntax;
+    try {
+        checkSyntax ("example.json");
+        console.log ("Valid JSON file");
+    } catch (e) {
+        console.log ("Error: " + e.message);
+    }
+      </pre>
+
+      <h4>Installation</h4>
+      The program can be installed using <i>npm</i>, with the command,
+      <pre>
+    npm -g install ujs-jsonsyntax
+      </pre>
+      
+      Use of the <i>-g</i> parameter will install it in the global system repository,
+      allowing command line / script use from any location on the system.
+
+      <h4>License</h4>
+      <i>jsonSyntax</i> is made available under the <i>MIT</i> license.
+      (<a href='https://github.com/usingjsonschema/ujs-jsonsyntax-nodejs/blob/master/LICENSE.txt'>link</a>)
+    </article>
+
+    <aside>
+      <h4>Resources</h4>
+      <p>jsonSyntax is part of the
+      <a href='https://usingjsonschema.github.io'>Using JSON Schema</a>
+       GitHub project.</p>
+      <p>GitHub <a href='https://github.com/usingjsonschema/ujs-jsonsyntax-nodejs'>Repository</a></p>
+      <p>JSDoc <a href='docs/index.html' target="_blank">documentation</a></p>
+      <p>JSON Schema <a href='http://json-schema.org' target='_blank';>home</a> website</p>
+    </aside>
+  </div>
+</body>
+</html>

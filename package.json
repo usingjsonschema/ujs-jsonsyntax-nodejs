@@ -1,0 +1,30 @@
+{
+    "name": "ujs-jsonsyntax",
+    "description": "Check syntax of a JSON file",
+    "version": "0.1.0",
+    "author": {
+        "name": "Joe McIntyre",
+        "email": "j_h_mcintyre@yahoo.com",
+        "url": "http://joemcintyre.github.io"
+    },
+    "keywords": ["bookujs", "json", "syntax"],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/usingjsonschema/ujs-jsonsyntax-nodejs"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https:github.com/usingjsonschema/ujs-jsonsyntax-nodejs/issues"
+    },
+    "main":"./lib/jsonSyntax",
+    "bin": {
+       "jsonsyntax": "./bin/jsonsyntax",
+       "jsonsyntaxn": "./bin/jsonsyntaxn"
+    },
+    "scripts": {
+        "test": "mocha ./test/test_jsonSyntax.js"
+    },
+    "devDependencies": {
+        "mocha": ""
+    }
+}
