@@ -1,6 +1,6 @@
 # Syntax Checker for JSON
 
-[![Build Status](https://secure.travis-ci.org/joemcintyre/ujs-jsonSyntax-node.png?branch=master)](http://travis-ci.org/joemcintyre/ujs-jsonSyntax-node)
+[![Build Status](https://travis-ci.org/usingjsonschema/ujs-jsonsyntax-nodejs.svg?branch=master)](https://travis-ci.org/usingjsonschema/ujs-jsonsyntax-nodejs)
 
 The 'hello world' of JSON processing, ```jsonSyntax``` provides a library
 to determine whether a file contains valid JSON syntax or not.
